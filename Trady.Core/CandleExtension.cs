@@ -81,7 +81,7 @@ namespace Trady.Core
         {
             var periodInstance = Activator.CreateInstance<TPeriod>();
             err = default;
-            var offset = candles.Any() ? candles.First().DateTime.Offset.Hours : 0;
+            var offset = candles.Any() ? candles.First().DateTime.Offset.TotalHours : 0;
             for (int i = 0; i < candles.Count() - 1; i++)
             {
                 var nextTime = periodInstance.NextTimestamp(candles.ElementAt(i).DateTime);
