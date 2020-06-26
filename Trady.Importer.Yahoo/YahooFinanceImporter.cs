@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Trady.Core.Infrastructure;
 using Trady.Core.Period;
 
-using YahooFinanceApi;
+using ImportApi;
 
 namespace Trady.Importer.Yahoo
 {
